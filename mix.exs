@@ -7,7 +7,7 @@ defmodule Arbor.Mixfile do
       app: :arbor,
       description: "Ecto adjacency list and tree traversal",
       version: @version,
-      elixir: "~> 1.2",
+      elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       deps: deps(),
@@ -29,7 +29,7 @@ defmodule Arbor.Mixfile do
 
   defp deps do
     [
-      {:ecto_sql, ">= 3.0.0"},
+      {:ecto_sql, ">= 3.8.0"},
       {:postgrex, ">= 0.0.0"},
       {:earmark, "~> 1.1", only: [:docs, :dev]},
       {:ex_doc, "~> 0.19", only: [:docs, :dev]}
